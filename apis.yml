@@ -1,4 +1,16 @@
 aid: snowball
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/snowball.png
 name: Snowball *
 description: 'Snowball * is a company surfaced as a portfolio company of gv and added to the API Evangelist
   network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
@@ -11,7 +23,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
@@ -22,5 +34,23 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/snowball-domain-security.yml
 - type: Website
-  url: http://trysnowball.com
+  url: https://trysnowball.com
+- type: Blog
+  url: https://trysnowball.com/news/
+- type: Support
+  url: https://trysnowball.com/contact/
+- type: PrivacyPolicy
+  url: https://trysnowball.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+  note: >-
+    No API surface. trysnowball.com serves a web-hosting marketing site; homepage
+    200, all API/well-known/docs paths 404, no api./developer./docs. subdomains.
+    Domain-security probed; well-known probed (all 404). Real published pages
+    (blog/support/privacy) wired.
